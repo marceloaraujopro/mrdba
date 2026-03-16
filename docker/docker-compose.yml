@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: postgres_lotacao
+    environment:
+      POSTGRES_USER: marcelo
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: sti_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - /docker/postgres/lotacao_sti:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_lotacao
+    environment:
+      PGADMIN_DEFAULT_EMAIL: marcelo@email.com
+      PGADMIN_DEFAULT_PASSWORD: 1234
+    ports:
+      - "8080:80"

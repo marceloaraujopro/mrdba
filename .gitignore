@@ -1,0 +1,27 @@
+# arquivos temporários
+*.tmp
+*.log
+*.cache
+
+# python
+__pycache__/
+*.pyc
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# ambiente virtual
+venv/
+.env
+
+# dados grandes
+data/raw/
+data/staging/
+data/curated/
+
+# arquivos do docker
+docker/*.pid
+
+# powerbi autosave
+*.pbix.autosave
