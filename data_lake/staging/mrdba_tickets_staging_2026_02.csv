@@ -1,0 +1,31 @@
+id,subject,status,priority,type,created_at,updated_at,custom_fields.cf_sgdb,custom_fields.cf_ambiente,custom_fields.cf_csi_status
+58640,CLEAR: There is not a Blocked Process for more than 5 minutes on Server: SMLSAWSSQLVP01,2,1,Incidentes,2026-03-02T16:56:34Z,2026-03-02T16:56:34Z,Sql Server,,
+58639,ALERT: There are 1 Blocked Processes for more than 5 minutes and a total of 1 Lock(s) on Server: SMLSAWSSQLVP01,2,1,Incidentes,2026-03-02T16:53:36Z,2026-03-02T16:53:36Z,Sql Server,,
+58638,INFO SIS: Database Checklist on Server: EC2AMAZ-KTTVFEL,5,1,Checklist,2026-03-02T11:55:09Z,2026-03-02T12:55:06Z,Sql Server,Produção,NA - Não aplicável
+58637,SNCBDO01 - Health Check Diário,5,1,Checklist,2026-03-02T11:03:28Z,2026-03-02T13:05:47Z,Oracle,Produção,
+58636,A Nossa Drogaria - Server Summary,5,1,Checklist,2026-03-02T11:00:24Z,2026-03-02T12:53:00Z,Sql Server,Produção,NA - Não aplicável
+58635,Mills - Checklist Oracle - SMAWSMCPVBP01 (MCP),2,1,Checklist,2026-03-02T11:00:13Z,2026-03-02T11:00:13Z,Oracle,,
+58631,INFO: Database Checklist on Server: SES-SQL-PRD\BI,5,1,Checklist,2026-03-02T10:18:18Z,2026-03-02T12:53:22Z,Sql Server,Produção,NA - Não aplicável
+58630,Mills - Checklist Oracle - SAP (ECP),5,1,Checklist,2026-03-02T10:15:07Z,2026-03-02T13:23:57Z,Oracle,Produção,
+58629,Mills - Checklist Oracle - SMAWSECCVBQ01 (ECQ),5,1,Checklist,2026-03-02T10:03:51Z,2026-03-02T13:25:33Z,Oracle,Produção,
+58628,Mills - Checklist Oracle - (MCQ),5,1,Checklist,2026-03-02T10:00:14Z,2026-03-02T13:26:25Z,Oracle,Produção,
+58627,Mills - Checklist Oracle - SMAWSECCVBD01 (ECD),5,1,Checklist,2026-03-02T10:00:10Z,2026-03-02T13:27:58Z,Oracle,Produção,
+58626,Mills - Checklist Oracle - (GWP),5,1,Checklist,2026-03-02T10:00:04Z,2026-03-02T13:28:14Z,Oracle,Produção,
+58624,Mills - Checklist Oracle - (POD),5,1,Checklist,2026-03-02T10:00:03Z,2026-03-02T13:28:14Z,Oracle,Produção,
+58622,Mills - Checklist Oracle - (POP),5,1,Checklist,2026-03-02T10:00:03Z,2026-03-02T13:28:14Z,Oracle,Produção,
+58625,Mills - Checklist Oracle - (GRD),5,1,Checklist,2026-03-02T10:00:03Z,2026-03-02T13:28:14Z,Oracle,Produção,
+58623,Mills - Checklist Oracle - (GRP),5,1,Checklist,2026-03-02T10:00:03Z,2026-03-02T13:28:14Z,Oracle,Produção,
+58621,INFO: Database Checklist on Server: SES-CLO-BD-SER,5,1,Checklist,2026-03-02T09:55:43Z,2026-03-02T12:53:53Z,Sql Server,Produção,NA - Não aplicável
+58620,INFO: Database Checklist on Server: SES-SQL-PRD,5,1,Checklist,2026-03-02T09:55:42Z,2026-03-02T12:54:15Z,Sql Server,Produção,NA - Não aplicável
+58619,INFO: Database Checklist on Server: SRVBD,5,1,Checklist,2026-03-02T09:55:41Z,2026-03-02T12:54:39Z,Sql Server,Produção,NA - Não aplicável
+58618,INFO Engeman: Database Checklist on Server: SMLSAWSSQLVP01,5,1,Checklist,2026-03-02T09:55:16Z,2026-03-02T13:45:02Z,Sql Server,Produção,NA - Não aplicável
+58617,INFO: Database Checklist on Server: CALIFORNIA,5,1,Checklist,2026-03-02T09:55:07Z,2026-03-02T12:55:37Z,Sql Server,Produção,NA - Não aplicável
+58616,INFO: Database Checklist on Server: SRVBDADM,5,1,Checklist,2026-03-02T09:55:06Z,2026-03-02T12:55:58Z,Sql Server,Produção,NA - Não aplicável
+58615,INFO: Database Checklist on Server: SRVBDADM\BI,5,1,Checklist,2026-03-02T09:55:04Z,2026-03-02T12:56:21Z,Sql Server,Produção,NA - Não aplicável
+58614,INFO: Database Checklist on Server: SRVBDCD,5,1,Checklist,2026-03-02T09:55:03Z,2026-03-02T12:56:40Z,Sql Server,Produção,NA - Não aplicável
+58613,INFO: Database Checklist on Server: SRVBDADM\BIMER,5,1,Checklist,2026-03-02T09:55:01Z,2026-03-02T12:57:37Z,Sql Server,Produção,NA - Não aplicável
+58612,INFO: Database Checklist on Server: SRVBDADM\PACK,5,1,Checklist,2026-03-02T09:55:01Z,2026-03-02T12:57:10Z,Sql Server,Produção,NA - Não aplicável
+58611,Mills - Checklist Oracle - SMAWSBWVBP02 (BP1),2,1,Checklist,2026-03-02T09:47:31Z,2026-03-02T09:47:31Z,Oracle,,
+58530,INFO SIS: Database Checklist on Server: EC2AMAZ-KTTVFEL,5,1,Checklist,2026-02-27T11:55:08Z,2026-02-27T16:34:40Z,Sql Server,Produção,NA - Não aplicável
+58529,SNCBDO01 - Health Check Diário,5,1,Checklist,2026-02-27T11:04:28Z,2026-02-27T11:06:33Z,Oracle,Produção,
+58528,Mills - Checklist Oracle - SMAWSMCPVBP01 (MCP),5,1,Checklist,2026-02-27T11:00:09Z,2026-02-27T11:00:38Z,Oracle,Produção,

@@ -46,7 +46,7 @@ mrdba
 ├── docker
 │ └── docker-compose.yml
 │
-├── data
+├── data_lake
 │ ├── raw
 │ ├── staging
 │ └── curated

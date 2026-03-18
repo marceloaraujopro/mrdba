@@ -1,0 +1,31 @@
+ticket_id,data_abertura,status,prioridade,tipo_ticket,cliente,sgdb,ambiente,servidor,tempo_resolucao_horas
+58640,2026-03-02 16:56:34+00:00,Resolvido,Baixa,Incidentes,NAO IDENTIFICADO,Sql Server,,SMLSAWSSQLVP01,0.0
+58639,2026-03-02 16:53:36+00:00,Resolvido,Baixa,Incidentes,NAO IDENTIFICADO,Sql Server,,SMLSAWSSQLVP01,0.0
+58638,2026-03-02 11:55:09+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,EC2AMAZ-KTTVFEL,0.9991666666666666
+58637,2026-03-02 11:03:28+00:00,Aguardando o cliente,Baixa,Checklist,SNCBDO01,Oracle,Produção,,2.038611111111111
+58636,2026-03-02 11:00:24+00:00,Aguardando o cliente,Baixa,Checklist,A NOSSA DROGARIA,Sql Server,Produção,,1.8766666666666667
+58635,2026-03-02 11:00:13+00:00,Resolvido,Baixa,Checklist,MILLS,Oracle,,,0.0
+58631,2026-03-02 10:18:18+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SES-SQL-PRD\BI,2.5844444444444443
+58630,2026-03-02 10:15:07+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.147222222222222
+58629,2026-03-02 10:03:51+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.361666666666667
+58628,2026-03-02 10:00:14+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.4363888888888887
+58627,2026-03-02 10:00:10+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.4633333333333334
+58626,2026-03-02 10:00:04+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.4694444444444446
+58624,2026-03-02 10:00:03+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.4697222222222224
+58622,2026-03-02 10:00:03+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.4697222222222224
+58625,2026-03-02 10:00:03+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.4697222222222224
+58623,2026-03-02 10:00:03+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,3.4697222222222224
+58621,2026-03-02 09:55:43+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SES-CLO-BD-SER,2.9694444444444446
+58620,2026-03-02 09:55:42+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SES-SQL-PRD,2.9758333333333336
+58619,2026-03-02 09:55:41+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SRVBD,2.9827777777777778
+58618,2026-03-02 09:55:16+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SMLSAWSSQLVP01,3.8294444444444444
+58617,2026-03-02 09:55:07+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,CALIFORNIA,3.0083333333333333
+58616,2026-03-02 09:55:06+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SRVBDADM,3.0144444444444445
+58615,2026-03-02 09:55:04+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SRVBDADM\BI,3.0213888888888887
+58614,2026-03-02 09:55:03+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SRVBDCD,3.0269444444444447
+58613,2026-03-02 09:55:01+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SRVBDADM\BIMER,3.0433333333333334
+58612,2026-03-02 09:55:01+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,SRVBDADM\PACK,3.035833333333333
+58611,2026-03-02 09:47:31+00:00,Resolvido,Baixa,Checklist,MILLS,Oracle,,,0.0
+58530,2026-02-27 11:55:08+00:00,Aguardando o cliente,Baixa,Checklist,NAO IDENTIFICADO,Sql Server,Produção,EC2AMAZ-KTTVFEL,4.658888888888889
+58529,2026-02-27 11:04:28+00:00,Aguardando o cliente,Baixa,Checklist,SNCBDO01,Oracle,Produção,,0.034722222222222224
+58528,2026-02-27 11:00:09+00:00,Aguardando o cliente,Baixa,Checklist,MILLS,Oracle,Produção,,0.008055555555555555
