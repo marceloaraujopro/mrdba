@@ -1,0 +1,17 @@
+tabela_dw,coluna_dw,origem_camada,arquivo_origem,coluna_origem,regra_transformacao,fonte_primaria,status_aderencia,observacao
+fato_tickets,ticket_id,raw,mrdba_tickets_2026_01.json,id,direto,Freshdesk,OK,
+fato_tickets,sk_tempo_abertura,curated,mrdba_tickets_curated_2026_01.csv,data_abertura,conversao YYYYMMDD,Freshdesk,OK,
+fato_tickets,sk_tempo_encerramento,curated,mrdba_tickets_curated_2026_01.csv,data_encerramento,conversao YYYYMMDD,Freshdesk,PARCIAL,depende de ticket encerrado
+fato_tickets,sk_servidor,curated,mrdba_tickets_curated_2026_01.csv,servidor,extraido do subject,Freshdesk,PARCIAL,ha nulos
+fato_tickets,sk_tipo_ticket,curated,mrdba_tickets_curated_2026_01.csv,tipo_ticket,padronizacao de tipos,Freshdesk,PARCIAL,revisar dominio
+fato_tickets,sk_status,curated,mrdba_tickets_curated_2026_01.csv,status,mapeamento de status,Freshdesk,OK,
+fato_tickets,sk_prioridade,curated,mrdba_tickets_curated_2026_01.csv,prioridade,mapeamento de prioridade,Freshdesk,OK,
+fato_tickets,sk_classificacao,curated,mrdba_tickets_curated_2026_01.csv,classificacao_ticket,regra de negocio,Freshdesk,NAO_ATENDIDO,campo ainda nao existe
+fato_tickets,tempo_resolucao_horas,curated,mrdba_tickets_curated_2026_01.csv,tempo_resolucao_horas,updated_at-created_at,Freshdesk,OK,
+fato_servidor,disponibilidade_percentual,,, ,nao ha origem atual,Outra fonte,NAO_ATENDIDO,nao vem do Freshdesk
+fato_servidor,espaco_total_gb,,, ,nao ha origem atual,Outra fonte,NAO_ATENDIDO,nao vem do Freshdesk
+fato_servidor,espaco_usado_gb,,, ,nao ha origem atual,Outra fonte,NAO_ATENDIDO,nao vem do Freshdesk
+fato_servidor,espaco_livre_gb,,, ,nao ha origem atual,Outra fonte,NAO_ATENDIDO,nao vem do Freshdesk
+fato_servidor,crescimento_diario_gb,,, ,nao ha origem atual,Outra fonte,NAO_ATENDIDO,nao vem do Freshdesk
+fato_csi,sk_csi,curated,mrdba_tickets_curated_2026_01.csv,titulo_csi+link_csi,derivado de tickets CSI,Freshdesk,PARCIAL,depende da identificacao correta de CSI
+fato_csi,sk_status,curated,mrdba_tickets_curated_2026_01.csv,status_csi,mapeamento de status,Freshdesk,PARCIAL,revisar dominio CSI
