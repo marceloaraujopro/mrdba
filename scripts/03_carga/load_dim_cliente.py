@@ -9,18 +9,23 @@ from pathlib import Path
 import pandas as pd
 from sqlalchemy import create_engine, text
 
+import os
+from dotenv import load_dotenv
+
 
 # =========================================================
 # CONFIGURAÇÕES
 # =========================================================
+load_dotenv()
+
 BASE_DIR = Path("/dados/projetos/mrdba")
 CURATED_DIR = BASE_DIR / "data_lake" / "03_curated" / "tickets"
 
-DB_USER = "marcelo"
-DB_PASSWORD = "1234"
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "db_mrdba"
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_PORT = os.getenv("DB_PORT", "5432")
+DB_NAME = os.getenv("DB_NAME")
 
 SCHEMA = "dw"
 TABELA = "dim_cliente"
@@ -30,9 +35,23 @@ TABELA = "dim_cliente"
 # AUXILIARES
 # =========================================================
 def criar_engine():
+    variaveis_obrigatorias = {
+        "DB_USER": DB_USER,
+        "DB_PASSWORD": DB_PASSWORD,
+        "DB_HOST": DB_HOST,
+        "DB_PORT": DB_PORT,
+        "DB_NAME": DB_NAME,
+    }
+
+    faltando = [k for k, v in variaveis_obrigatorias.items() if not v]
+
+    if faltando:
+        raise EnvironmentError(
+            f"Variáveis de ambiente ausentes no .env: {', '.join(faltando)}"
+        )
+
     url = f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
     return create_engine(url)
-
 
 def caminho_curated(ano: str, mes: str) -> Path:
     return CURATED_DIR / f"mrdba_tickets_curated_{ano}_{mes}.csv"

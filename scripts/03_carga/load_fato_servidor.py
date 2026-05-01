@@ -10,17 +10,21 @@ from pathlib import Path
 import pandas as pd
 from sqlalchemy import create_engine, text
 
+import os
+from dotenv import load_dotenv
 
 # =========================================================
 # CONFIGURAÇÕES
 # =========================================================
 BASE_DIR = Path("/dados/projetos/mrdba")
 
-DB_USER = "marcelo"
-DB_PASSWORD = "1234"
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "db_mrdba"
+load_dotenv()
+
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_PORT = os.getenv("DB_PORT", "5432")
+DB_NAME = os.getenv("DB_NAME")
 
 SCHEMA = "dw"
 TABELA_FATO = "fato_servidor"
@@ -32,6 +36,21 @@ TABELA_DIM_SERVIDOR = "dim_servidor"
 # AUXILIARES GERAIS
 # =========================================================
 def criar_engine():
+    variaveis_obrigatorias = {
+        "DB_USER": DB_USER,
+        "DB_PASSWORD": DB_PASSWORD,
+        "DB_HOST": DB_HOST,
+        "DB_PORT": DB_PORT,
+        "DB_NAME": DB_NAME,
+    }
+
+    faltando = [nome for nome, valor in variaveis_obrigatorias.items() if not valor]
+
+    if faltando:
+        raise EnvironmentError(
+            f"Variáveis de ambiente ausentes no .env: {', '.join(faltando)}"
+        )
+
     url = f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
     return create_engine(url)
 
